@@ -1,0 +1,7 @@
+server:
+  #Listen only for ip v4 over tcp network
+  networkType: "tcp4"
+  #Listen on port 4444
+  port: ":4444"
+
+
