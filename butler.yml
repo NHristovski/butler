@@ -1,7 +1,14 @@
 server:
-  #Listen only for ip v4 over tcp network
+  #listen only for ip v4 over tcp network
   networkType: "tcp4"
-  #Listen on port 4444
+  #listen on port 4444
   port: ":4444"
+  #Root Directory
+  rootDir: "C:\\www\\"
+
+logging:
+  debug:
+    enabled: false
+
 
 
