@@ -2,7 +2,6 @@ package main
 
 import (
 	"butler/config"
-	"butler/config-parser"
 	"butler/httputils"
 	"fmt"
 	"io/ioutil"
@@ -117,7 +116,7 @@ func handleNotFound(connection net.Conn, requestId string, cfg config.Config, fi
 func main() {
 
 	cfg := config.Config{}
-	err := config_parser.InitConfig(&cfg, "butler.yml")
+	err := config.InitConfig(&cfg, "butler.yml")
 
 	if err != nil {
 		log.Println("Failed to load configuration")

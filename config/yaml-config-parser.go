@@ -1,12 +1,11 @@
-package config_parser
+package config
 
 import (
-	"butler/config"
 	"gopkg.in/yaml.v2"
 	"os"
 )
 
-func InitConfig(cfg *config.Config, filePath string) error {
+func InitConfig(cfg *Config, filePath string) error {
 	f, err := os.Open(filePath)
 	if err != nil {
 		return err
